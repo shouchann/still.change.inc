@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="style.js"></script>
+    <script src="https://sdk.form.run/js/v2/formrun.js"></script>
+    <title>Still Change Inc.</title>
+</head>
+<header></header>
+<body>
+    
+</body>
+<footer>
+    <!-- class, action, methodを変更しないでください -->
+    <form  class="formrun" action="https://form.run/api/v1/r/rv3ipchuqkdkptl4mmkm6hmf" method="post">
+        <!-- ↓自由に要素を追加・編集することができます -->
+        <div class="flex">
+            <label>お名前 <span>※ 必須</span></label>
+            <input class="tp_0" name="お名前" type="text">
+        </div>
+    
+        <div class="flex">
+            <label>メールアドレス <span>※ 必須</span></label>
+            <input class="tp_0" name="メールアドレス" type="text" data-formrun-type="email" data-formrun-required>
+            <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
+        </div>
+    
+        <div class="flex">
+            <label>お問い合わせ <span>※ 必須</span></label>
+            <textarea name="お問い合わせ" data-formrun-required></textarea>
+            <div data-formrun-show-if-error="お問い合わせ">お問い合わせ入力してください</div>
+        </div>
+    
+        <div class="flex_a">
+            <label>個人情報利用同意 <span>※ 必須</span></label>
+            <input class="input_tp_1" type="checkbox" name="個人情報利用同意" data-formrun-required>
+            <div data-formrun-show-if-error="個人情報利用同意">同意してください</div>
+        </div>
+    
+        <!-- ボット投稿をブロックするためのタグ -->
+        <div class="_formrun_gotcha flex">
+            <style media="screen">._formrun_gotcha {position:absolute!important;height:1px;width:1px;overflow:hidden;}</style>
+            <label for="_formrun_gotcha">If you are a human, ignore this field</label>
+            <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
+        </div>
+    
+        <button type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信</button>
+    </form>
+  
+
+</footer>
+</html>
