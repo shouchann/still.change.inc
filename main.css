@@ -13,11 +13,15 @@ svg.header-svg1{
     z-index: 1;
 }
 .slider {
-    width: 20%;
-    position:relative;
-	z-index: 1;
-	/*↑z-indexの値をh1のz-indexの値よりも小さくして背景に回す*/
-	height: 20vh;/* スライダー全体の縦幅を画面の高さいっぱい（100vh）にする */
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    /*↑z-indexの値をh1のz-indexの値よりも小さくして背景に回す*/
+    height: 100vh;/*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
 }
 
 .slider-item01 {
@@ -60,11 +64,14 @@ svg.header-svg1{
     background: url(./img/slider13.jpg);
 }
 .slider-item {
+    margin: 0;
+    padding: 0;
     width: 100%;/*各スライダー全体の横幅を画面の高さいっぱい（100%）にする*/
-    height:20vh;/*各スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+    height: 100vh;
     background-repeat: no-repeat;/*背景画像をリピートしない*/
     background-position: center;/*背景画像の位置を中央に*/
     background-size: cover;/*背景画像が.slider-item全体を覆い表示*/
+    list-style: none;
 }
 .header-menu{
     display: flex;
@@ -83,6 +90,7 @@ svg.header-svg1{
     margin-left: 1em;
 }
 .member-title{
+    margin-top: 20em;
     text-align: center;
 }
 .vision{
