@@ -6,31 +6,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <script src="style.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <script src="https://sdk.form.run/js/v2/formrun.js"></script>
     <title>Still Change Inc.</title>
 </head>
-<header></header>
+<header>
+    <!-- <svg class="header-svg1" id="レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1082.7 1981.6"><defs><style>.cls-1{fill:#5cc7ef;isolation:isolate;opacity:0.5;}</style></defs><path id="パス_7" data-name="パス 7" class="cls-1" d="M452.2,234.4H1534.9L452.6,2216l-.4-656.6Z" transform="translate(-452.2 -234.4)"/></svg> -->
+    <div class="header-menu">
+        <h1 class="main-title">Still Change Inc.</h1>
+        <div class="space">
+            <div class="slider">
+                <ul class="slider-top">
+                    <a href=""><li class="slider-item slider-item01"></li></a>
+                    <a href=""><li class="slider-item slider-item02"></li></a>
+                    <a href=""><li class="slider-item slider-item03"></li></a>
+                    <a href=""><li class="slider-item slider-item04"></li></a>
+                    <a href=""><li class="slider-item slider-item05"></li></a>
+                    <a href=""><li class="slider-item slider-item06"></li></a>
+                    <a href=""><li class="slider-item slider-item07"></li></a>
+                    <a href=""><li class="slider-item slider-item08"></li></a>
+                    <a href=""><li class="slider-item slider-item09"></li></a>
+                    <a href=""><li class="slider-item slider-item10"></li></a>
+                    <a href=""><li class="slider-item slider-item11"></li></a>
+                    <a href=""><li class="slider-item slider-item12"></li></a>
+                    <a href=""><li class="slider-item slider-item13"></li></a>
+                </ul>
+            </div>
+        <ul class="menu">
+            <li class="menu-item">About</li>
+            <li class="menu-item">Member</li>
+            <li class="menu-item">Product</li>
+            <li class="menu-item">Contact</li>
+            <li class="menu-item">SNS</li>
+        </ul>
+    </div>
+</header>
 <body>
-    
+    <div class="vision">
+        <h1>VISION</h1>
+        <h2>全世界へ革命を起こす。</h2>
+    </div>
+    <h1 class="member-title">MEMBER</h1>
+    <div class="member">
+        <li class="m_li">
+            <img src="./img/shochan_icon.jpg" alt="">
+            <p>式田 翔一</p>
+        </li>
+        <li class="m_li">
+            <img src="./img/yuzu_icon.jpg" alt="">
+            <p>植村 柚希</p>
+        </li>
+        <div class="spacer"></div>
+        <li class="m_li">
+            <img src="./img/akane_icon.jpg" alt="">
+            <p>小西 萌絵</p>
+        </li>
+        <li class="m_li">
+            <img src="./img/yu-a_icon.jpg" alt="">
+            <p>山中 優亜</p>
+        </li>
+    </div>
+    <div class="news">
+        <h1>NEWS</h1>
+        <li class="news-item"></li>
+        <li class="news-item"></li>
+        <li class="news-item"></li>
+        <li class="news-item"></li>
+        <li class="news-item"></li>
+        <li class="news-item"></li>
+        <li class="news-item"></li>
+        <li class="news-item"></li>
+    </div>
+    <script src="./slider.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 <footer>
+    <h1>Contact for US</h1>
     <!-- class, action, methodを変更しないでください -->
     <form  class="formrun" action="https://form.run/api/v1/r/rv3ipchuqkdkptl4mmkm6hmf" method="post">
         <!-- ↓自由に要素を追加・編集することができます -->
         <div class="flex">
-            <label>お名前 <span>※ 必須</span></label>
-            <input class="tp_0" name="お名前" type="text" value="" placeholder="お名前をご記入ください。">
+            <input class="tp_0" name="お名前" type="text" value="" placeholder="Name">
         </div>
     
         <div class="flex">
-            <label>メールアドレス <span>※ 必須</span></label>
-            <input class="tp_0" name="メールアドレス" type="text" data-formrun-type="email" data-formrun-required　value="" placeholder="メールアドレスをご記入ください。">
+            <input class="tp_0" name="メールアドレス" type="text" data-formrun-type="email" data-formrun-required　value="" placeholder="Email">
             <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
         </div>
     
         <div class="flex">
-            <label>お問い合わせ <span>※ 必須</span></label>
-            <textarea name="お問い合わせ" data-formrun-required value="" placeholder="お問い合わせ内容をご記入ください。"></textarea >
+            <textarea name="お問い合わせ" data-formrun-required value="" placeholder="Message"></textarea >
             <div data-formrun-show-if-error="お問い合わせ">お問い合わせ入力してください</div>
         </div>
     
@@ -47,9 +113,8 @@
             <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
         </div>
     
-        <button type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信</button>
+        <button type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">Submit</button>
     </form>
   
-
 </footer>
 </html>

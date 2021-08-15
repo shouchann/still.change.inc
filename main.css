@@ -1,3 +1,120 @@
+*{
+    list-style: none;
+    z-index: 2;
+}
+body{
+    margin: 0;
+}
+svg.header-svg1{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 46%;
+    z-index: 1;
+}
+.slider {
+    width: 20%;
+    position:relative;
+	z-index: 1;
+	/*↑z-indexの値をh1のz-indexの値よりも小さくして背景に回す*/
+	height: 20vh;/* スライダー全体の縦幅を画面の高さいっぱい（100vh）にする */
+}
+
+.slider-item01 {
+    background:url(./img/slider1.jpg);
+}
+.slider-item02 {
+    background:url(./img/slider2.jpg);
+}
+.slider-item03 {
+    background:url(./img/slider3.jpg);
+}
+.slider-item04 {
+    background:url(./img/slider4.jpg);
+}
+.slider-item05 {
+    background:url(./img/slider5.jpg);
+}
+.slider-item06 {
+    background:url(./img/slider6.jpg);
+}
+.slider-item07{
+    background: url(./img/slider7.jpg);
+}
+.slider-item08{
+    background: url(./img/slider8.jpg);
+}
+.slider-item09{
+    background: url(./img/slider9.jpg);
+}
+.slider-item10{
+    background: url(./img/slider10.jpg);
+}
+.slider-item11{
+    background: url(./img/slider11.jpg);
+}
+.slider-item12{
+    background: url(./img/slider12.jpg);
+}
+.slider-item13{
+    background: url(./img/slider13.jpg);
+}
+.slider-item {
+    width: 100%;/*各スライダー全体の横幅を画面の高さいっぱい（100%）にする*/
+    height:20vh;/*各スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+    background-repeat: no-repeat;/*背景画像をリピートしない*/
+    background-position: center;/*背景画像の位置を中央に*/
+    background-size: cover;/*背景画像が.slider-item全体を覆い表示*/
+}
+.header-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1em;
+}
+.member-title{
+    text-align: center;
+}
+.vision{
+    text-align: center;
+}
+.member{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.m_li{
+    width: 30%;
+    margin: 0;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.spacer{
+    width: 100%;
+}
+img{
+    width:150px;
+	height:150px;
+	object-fit:cover;
+	border-radius:50%;
+}
+.news{
+    text-align: center;
+}
 form{
     width: 100vw;
     display: flex;
@@ -15,18 +132,24 @@ form{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 1em;
 }
 span{
     color: #ff1e1e;
 }
+footer h1{
+    text-align: center;
+}
 input{
     padding: 10px;
+   
 }
 input.tp_0{
     width: 400px;
     height: 30px;
     border: 1px solid #202020;
     border-radius: 5vw;
+    margin-bottom: 3em;
 }
 input .input_tp_1{
     width: 50%;
@@ -34,9 +157,21 @@ input .input_tp_1{
 textarea{
     padding: 10px;
     width: 400px;
-    height: 400px;
+    height: 300px;
     border: 1px solid #202020;
     border-radius: 1vw;
+}
+button{
+    width: 20%;
+    height: 40px;
+    border: 1px solid;
+    background-color: #ffffff;
+    border-radius: 2vw;
+    transition: .2s;
+}
+button:hover{
+    background-color: #aff2ed;
+    transition: .2s;
 }
 footer button{
     text-align: center;
